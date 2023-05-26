@@ -1,0 +1,7 @@
+C:\lscc\diamond\3.10_x64\synpbase\bin64\syn_nfilter.exe  -link  -top  sem  -multisrs  C:\Users\Erny\Documents\FER\DIGLOG\labosi\lab6\impl1\synwork\lab6_impl1_comp.srs  -osyn  C:\Users\Erny\Documents\FER\DIGLOG\labosi\lab6\impl1\synwork\lab6_impl1_mult.srs  -log  C:\Users\Erny\Documents\FER\DIGLOG\labosi\lab6\impl1\synlog\lab6_impl1_multi_srs_gen.srr 
+relcom:..\..\..\..\..\..\..\..\..\lscc\diamond\3.10_x64\synpbase\bin64\syn_nfilter.exe -link -top sem -multisrs ..\synwork\lab6_impl1_comp.srs -osyn ..\synwork\lab6_impl1_mult.srs -log ..\synlog\lab6_impl1_multi_srs_gen.srr
+rc:0 success:1 runtime:1
+file:..\synwork\lab6_impl1_comp.srs|io:i|time:1547476346|size:4714|exec:0|csum:1BD0F0D25D6F7CF0895F13D6BFB9E745
+file:..\synwork\lab6_impl1_mult.srs|io:o|time:1547476348|size:2442|exec:0|csum:
+file:..\synlog\lab6_impl1_multi_srs_gen.srr|io:o|time:1547476348|size:518|exec:0|csum:
+file:..\..\..\..\..\..\..\..\..\lscc\diamond\3.10_x64\synpbase\bin64\syn_nfilter.exe|io:i|time:1501884990|size:8865280|exec:1|csum:B37FCE9CF34F30C81898D8440E6E88C7

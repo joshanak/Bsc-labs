@@ -1,0 +1,71 @@
+----------------------------------------------------------------------
+Report for cell datapath.x
+
+Register bits: 64 of 8352 (1%)
+PIC Latch:       0
+I/O cells:       18
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2B       17       100.0
+                            FD1P3AX       16       100.0
+                            FD1S3AX       12       100.0
+                            FD1S3IX       25       100.0
+                            FD1S3JX        7       100.0
+                                GSR        1       100.0
+                                 IB       10       100.0
+                           IFS1P3DX        4       100.0
+                                INV        1       100.0
+                            L6MUX21        2       100.0
+                           MULT9X9B        1       100.0
+                                 OB        8       100.0
+                           ORCALUT4      102       100.0
+                              PFUMX       19       100.0
+                                PUR        1       100.0
+                                VHI        4       100.0
+                                VLO        4       100.0
+SUB MODULES 
+                                alu        1       100.0
+                           reg_file        1       100.0
+                          upravljac        1       100.0
+                            
+                         TOTAL           237           
+----------------------------------------------------------------------
+Report for cell alu.netlist
+     Instance path:  ALU
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                            L6MUX21        2       100.0
+                           MULT9X9B        1       100.0
+                           ORCALUT4       49        48.0
+                              PFUMX       11        57.9
+                                VHI        1        25.0
+                                VLO        1        25.0
+                            
+                         TOTAL            65           
+----------------------------------------------------------------------
+Report for cell upravljac.netlist
+     Instance path:  I_upravljac
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2B       17       100.0
+                            FD1S3AX       12       100.0
+                            FD1S3IX       25       100.0
+                            FD1S3JX        7       100.0
+                                INV        1       100.0
+                           ORCALUT4       32        31.4
+                                VHI        1        25.0
+                                VLO        1        25.0
+                            
+                         TOTAL            96           
+----------------------------------------------------------------------
+Report for cell reg_file.netlist
+     Instance path:  I_regfile
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                            FD1P3AX       16       100.0
+                           ORCALUT4       21        20.6
+                              PFUMX        8        42.1
+                                VHI        1        25.0
+                                VLO        1        25.0
+                            
+                         TOTAL            47           

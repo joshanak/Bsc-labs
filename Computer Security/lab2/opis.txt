@@ -1,0 +1,38 @@
+Sustav se sastoji od dva programa -> usermgmt.py i login.py.
+Prilikom upisa prekrije se korisnikov unos tako da se preventira over the shoulder prijetnja.
+USERMGMT.PY
+Usermgmt.py je program za upravljanje nad siframa te prilikom korištenja program daje maksimalno
+moguce povratnih informacija.
+Program započinje uzimanjem dva argumenata iz naredbene linije te zatim predavanjem funkciji koja obavlja
+posao.
+Funkcija prvo inicijalizira citanje nad bazom podataka te cita liniju po liniju dok se ne nade zapis koji sadrzava
+drugi argument predan funkciji(username)
+Ako je naden username postavlja zastavicu u 1 koja ce biti kasnije potrebna te  sprema liniju u varijablu record.
+U suprotnom zastavica ostaje u 0.
+ADD
+Prvi akcija koja se provjerava je "add" koja dodaje zapis u bazu. U slucaju da je zastavica u jedinici
+ispisujem korisniku da vec postoji te program zavrsava.
+Ako je zastavica u nuli - uzimam password iz prompta te generiram hashiranu verziju (scrypt()) uspomoc
+32 random bajtova (get_random_bytes() -> salt) koja je duljina 32 bajta. Ovo osigurava da ne postoje dvije iste sifre u bazi (za razlicite usere)
+Te ako netko probije u bazu podataka nema direktan pristup siframa.
+Salt i novu sifru spremam zajedno sa usernameom u bazu.
+Za ostatak akcija username mora postojati u bazi te ako ne postoji zavrsava program
+FORCEPASS
+Druga akcija je forcepass. Ona je implementirana tako da dodajem 0 na kraju usernamea, te zapisujem natrag u bazu
+zajedno sa nepromjenjenom sifrom - to ce mi kasnije sluziti kao zastavica da moram promjenit sifru
+DEL
+del samo zamijeni u bazi trenutni zapis sa praznim retkom
+PASSWD
+passwd je akcija za promjenu sifre unesenog usera. Generiranje nove sifre je gotovo identicna kao i kod
+add akcije, samo ovaj put novo kreirani zapis ne dodajemo na kraj baze nego zamjenimo sa starim zapisom
+
+LOGIN
+Program je implementiran tako da u slucaju greške odaje što manje detalja kako je nastala greška
+Uzimam argument iz naredbene linije koji sadrzi username. Ako username ne postoji u bazi i dalje pitaj za sifru (manje detalja) te odbij svaki put.
+Kada sam nasao zapis koji sadrzi zapisani username i hashiranu sifru. Procitam iz hashirane sifre prvih 32 bajtova (64 hexi znamenka)
+koji je salt te ostatak hashirane sifre je stara sifra.
+Generiram novu hashiranu sifru uspomoc procitanog salta i unesenog passworda te usporedim jesu li iste stara i nova sifra.
+Ako jesu ( a trebale bi biti ako je korisnik unio istu sifru koja je i koristena za kreiranje korisnika) provjerim
+moram li promjeniti sifru (je li na kraju usernamea 0). U slucaju da moram algoritam je isti kao i kod passwd akcije u usermgmt.py
+Ako je sve u redu proslo zavrsavam program i ispisujem da je dobar login, u suprotnom vrtim tri puta tako da ponovno odajem
+manje detalja.

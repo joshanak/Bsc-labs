@@ -1,0 +1,1 @@
+project -fileorder "C:/lscc/diamond/3.10_x64/cae_library/synthesis/vhdl/xp2.vhd" "C:/Users/Erny/Documents/FER/DIGLOG/labosi/lab4/source/rf_4x4_1w_2r.vhd" "C:/Users/Erny/Documents/FER/DIGLOG/labosi/lab4/source/upravljac.vhd" "C:/Users/Erny/Documents/FER/DIGLOG/labosi/lab4/alu.vhd" "C:/Users/Erny/Documents/FER/DIGLOG/labosi/lab4/source/datapath.vhd" 

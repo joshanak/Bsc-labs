@@ -1,0 +1,2 @@
+@E: CD297 :"C:\Users\Erny\Documents\FER\DIGLOG\labosi\lab4\alu.vhd":23:5:23:30|Width mismatch, location has width 4, value 8
+

@@ -1,0 +1,90 @@
+Running in Lattice mode
+
+Starting:    C:\lscc\diamond\3.10_x64\synpbase\bin64\mbin\synbatch.exe
+Install:     C:\lscc\diamond\3.10_x64\synpbase
+Hostname:    DESKTOP-2ITF9PR
+Date:        Mon Dec 10 13:41:11 2018
+Version:     M-2017.03L-SP1-1
+
+Arguments:   -product synplify_pro -batch lab4_impl4_synplify.tcl
+ProductType: synplify_pro
+
+
+
+
+log file: "C:\Users\Erny\Documents\FER\DIGLOG\labosi\lab4\impl4\lab4_impl4.srr"
+Running: hdl_info_gen in foreground
+
+Generating HDL info...
+
+hdl_info_gen completed
+# Mon Dec 10 13:41:12 2018
+
+Return Code: 0
+Run Time:00h:00m:01s
+Copied C:\Users\Erny\Documents\FER\DIGLOG\labosi\lab4\impl4\lab4_impl4.srr to C:\Users\Erny\Documents\FER\DIGLOG\labosi\lab4\impl4\lab4_impl4.srf
+log file: "C:\Users\Erny\Documents\FER\DIGLOG\labosi\lab4\impl4\lab4_impl4.srr"
+Running: impl4 in foreground
+
+Running proj_1|impl4
+
+Running: compile (Compile) on proj_1|impl4
+# Mon Dec 10 13:41:12 2018
+
+Running: compile_flow (Compile Process) on proj_1|impl4
+# Mon Dec 10 13:41:12 2018
+
+Running: compiler (Compile Input) on proj_1|impl4
+# Mon Dec 10 13:41:12 2018
+Copied C:\Users\Erny\Documents\FER\DIGLOG\labosi\lab4\impl4\synwork\lab4_impl4_comp.srs to C:\Users\Erny\Documents\FER\DIGLOG\labosi\lab4\impl4\lab4_impl4.srs
+
+compiler completed
+# Mon Dec 10 13:41:14 2018
+
+Return Code: 0
+Run Time:00h:00m:02s
+
+Running: multi_srs_gen (Multi-srs Generator) on proj_1|impl4
+# Mon Dec 10 13:41:14 2018
+
+multi_srs_gen completed
+# Mon Dec 10 13:41:14 2018
+
+Return Code: 0
+Run Time:00h:00m:00s
+Copied C:\Users\Erny\Documents\FER\DIGLOG\labosi\lab4\impl4\synwork\lab4_impl4_mult.srs to C:\Users\Erny\Documents\FER\DIGLOG\labosi\lab4\impl4\lab4_impl4.srs
+Copied C:\Users\Erny\Documents\FER\DIGLOG\labosi\lab4\impl4\lab4_impl4.srr to C:\Users\Erny\Documents\FER\DIGLOG\labosi\lab4\impl4\lab4_impl4.srf
+Complete: Compile Process on proj_1|impl4
+
+Running: premap (Pre-mapping) on proj_1|impl4
+# Mon Dec 10 13:41:14 2018
+
+premap completed with warnings
+# Mon Dec 10 13:41:15 2018
+
+Return Code: 1
+Run Time:00h:00m:01s
+Complete: Compile on proj_1|impl4
+
+Running: map (Map) on proj_1|impl4
+# Mon Dec 10 13:41:15 2018
+License granted for 4 parallel jobs
+
+Running: fpga_mapper (Map & Optimize) on proj_1|impl4
+# Mon Dec 10 13:41:15 2018
+Copied C:\Users\Erny\Documents\FER\DIGLOG\labosi\lab4\impl4\synwork\lab4_impl4_m.srm to C:\Users\Erny\Documents\FER\DIGLOG\labosi\lab4\impl4\lab4_impl4.srm
+
+fpga_mapper completed with warnings
+# Mon Dec 10 13:41:18 2018
+
+Return Code: 1
+Run Time:00h:00m:03s
+Complete: Map on proj_1|impl4
+Copied C:\Users\Erny\Documents\FER\DIGLOG\labosi\lab4\impl4\lab4_impl4.srr to C:\Users\Erny\Documents\FER\DIGLOG\labosi\lab4\impl4\lab4_impl4.srf
+Complete: Logic Synthesis on proj_1|impl4
+TCL script complete: "lab4_impl4_synplify.tcl"
+exit status=0
+exit status=0
+Save changes for project:
+C:\Users\Erny\Documents\FER\DIGLOG\labosi\lab4\impl4\proj_1.prj
+batch mode default:no

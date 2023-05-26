@@ -1,0 +1,15 @@
+#!/bin/bash
+#pokrenuto u pycharmu u venv sa pycryptodome
+python3 tajnik.py init masterpass
+
+python3 tajnik.py put masterpass www.fer.hr sifra1
+
+python3 tajnik.py get www.fer.hr
+
+python3 tajnik.py put www.fer.hr sifra2
+
+python3 tajnik.py get www.fer.hr
+
+python3 tajnik.py put wrongmaster www.fer.hr sifra3
+
+python3 tajnik.py get wrongmaster www.fer.hr 

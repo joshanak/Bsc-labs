@@ -1,0 +1,1 @@
+project -fileorder "C:/lscc/diamond/3.10_x64/cae_library/synthesis/vhdl/xp2.vhd" "C:/Users/Erny/Documents/FER/DIGLOG/labosi/lab6/sem_automat_modificirano.vhd" "C:/Users/Erny/Documents/FER/DIGLOG/labosi/lab6/source/sem_toplevel.vhd" 

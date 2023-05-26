@@ -1,0 +1,49 @@
+Synopsys HDL Compiler, version comp2017q2p1, Build 190R, built Aug  4 2017
+@N|Running in 64-bit mode
+Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+Synopsys VHDL Compiler, version comp2017q2p1, Build 190R, built Aug  4 2017
+@N|Running in 64-bit mode
+Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+@N: CD720 :"C:\lscc\diamond\3.10_x64\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ps
+@N:"C:\Users\Erny\Documents\FER\DIGLOG\labosi\lab6\source\sem_toplevel.vhd":5:7:5:9|Top entity is set to sem.
+File C:\Users\Erny\Documents\FER\DIGLOG\labosi\lab6\source\sem_automat.vhd changed - recompiling
+VHDL syntax check successful!
+File C:\Users\Erny\Documents\FER\DIGLOG\labosi\lab6\source\sem_automat.vhd changed - recompiling
+@N: CD630 :"C:\Users\Erny\Documents\FER\DIGLOG\labosi\lab6\source\sem_toplevel.vhd":5:7:5:9|Synthesizing work.sem.struct.
+@N: CD630 :"C:\Users\Erny\Documents\FER\DIGLOG\labosi\lab6\sem_automat_modificirano.vhd":5:7:5:17|Synthesizing work.sem_automat.mix_moore_mealy.
+Post processing for work.sem_automat.mix_moore_mealy
+Post processing for work.sem.struct
+@W: CL246 :"C:\Users\Erny\Documents\FER\DIGLOG\labosi\lab6\source\sem_toplevel.vhd":9:1:9:2|Input port bits 3 to 1 of sw(3 downto 0) are unused. Assign logic for all port bits or change the input port size.
+
+At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 71MB peak: 72MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Mon Jan 14 15:32:26 2019
+
+###########################################################]
+Synopsys Netlist Linker, version comp2017q2p1, Build 190R, built Aug  4 2017
+@N|Running in 64-bit mode
+File C:\Users\Erny\Documents\FER\DIGLOG\labosi\lab6\impl1\synwork\layer0.srs changed - recompiling
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Mon Jan 14 15:32:26 2019
+
+###########################################################]
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Mon Jan 14 15:32:26 2019
+
+###########################################################]

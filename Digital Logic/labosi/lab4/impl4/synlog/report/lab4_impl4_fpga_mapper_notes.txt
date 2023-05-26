@@ -1,0 +1,14 @@
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+@N: MT206 |Auto Constrain mode is enabled
+@N: FX271 :"c:\users\erny\documents\fer\diglog\labosi\lab4\source\upravljac.vhd":29:1:29:2|Replicating instance I_upravljac.R_AddrB[1] (in view: work.datapath(x)) with 11 loads 1 time to improve timing.
+@N: FX271 :"c:\users\erny\documents\fer\diglog\labosi\lab4\source\upravljac.vhd":29:1:29:2|Replicating instance I_upravljac.R_AddrB[0] (in view: work.datapath(x)) with 9 loads 1 time to improve timing.
+@N: FX271 :"c:\users\erny\documents\fer\diglog\labosi\lab4\source\upravljac.vhd":29:1:29:2|Replicating instance I_upravljac.R_ALUOp[2] (in view: work.datapath(x)) with 18 loads 1 time to improve timing.
+@N: FX271 :"c:\users\erny\documents\fer\diglog\labosi\lab4\source\upravljac.vhd":29:1:29:2|Replicating instance I_upravljac.R_ALUOp[1] (in view: work.datapath(x)) with 16 loads 1 time to improve timing.
+@N: FX271 :"c:\users\erny\documents\fer\diglog\labosi\lab4\source\upravljac.vhd":29:1:29:2|Replicating instance I_upravljac.R_ALUOp[0] (in view: work.datapath(x)) with 11 loads 1 time to improve timing.
+@N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
+@N: MT611 :|Automatically generated clock upravljac|R_keys_last_derived_clock[3] is not used and is being removed
+@N: FX1056 |Writing EDF file: C:\Users\Erny\Documents\FER\DIGLOG\labosi\lab4\impl4\lab4_impl4.edi
+@N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.

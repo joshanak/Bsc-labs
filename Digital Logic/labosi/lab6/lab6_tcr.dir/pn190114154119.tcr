@@ -1,0 +1,9 @@
+#Start recording tcl command: 1/14/2019 15:10:22
+#Project Location: C:/Users/Erny/Documents/FER/DIGLOG/labosi/lab6; Project name: lab6
+prj_project open "C:/Users/Erny/Documents/FER/DIGLOG/labosi/lab6/lab6.ldf"
+prj_run Export -impl impl1
+prj_run Export -impl impl1
+prj_src add "C:/Users/Erny/Documents/FER/DIGLOG/labosi/lab6/sem_automat_modificirano.vhd"
+prj_src exclude "C:/Users/Erny/Documents/FER/DIGLOG/labosi/lab6/source/sem_automat.vhd"
+prj_run Export -impl impl1
+#Stop recording: 1/14/2019 15:41:19

@@ -1,0 +1,468 @@
+# Mon Jan 14 15:32:28 2019
+
+Synopsys Lattice Technology Mapper, Version maplat, Build 1796R, Built Aug  4 2017 11:10:16
+Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version M-2017.03L-SP1-1
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 100MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 112MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 114MB)
+
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+@N: MT206 |Auto Constrain mode is enabled
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+
+
+Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
+
+
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
+
+
+Starting gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
+
+
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
+
+@N: FA113 :"c:\users\erny\documents\fer\diglog\labosi\lab6\source\sem_toplevel.vhd":20:17:20:31|Pipelining module un2_r_clk_div[23:0]. For more information, search for "pipelining" in Online Help.
+@N: MF169 :"c:\users\erny\documents\fer\diglog\labosi\lab6\source\sem_toplevel.vhd":20:4:20:12|Pushed in register R_clk_div[23:0].
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 141MB peak: 141MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 141MB peak: 141MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 142MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:00s		    -1.75ns		  41 /        37
+   2		0h:00m:00s		    -1.75ns		  41 /        37
+@N: FX271 :|Replicating instance I_automat.g0_0 (in view: work.sem(struct)) with 12 loads 1 time to improve timing.
+Timing driven replication report
+Added 0 Registers via timing driven replication
+Added 1 LUTs via timing driven replication
+
+   3		0h:00m:01s		    -2.15ns		  44 /        37
+   4		0h:00m:01s		    -2.15ns		  44 /        37
+   5		0h:00m:01s		    -2.15ns		  44 /        37
+   6		0h:00m:01s		    -1.67ns		  44 /        37
+@N: FX271 :"c:\users\erny\documents\fer\diglog\labosi\lab6\sem_automat_modificirano.vhd":95:1:95:2|Replicating instance I_automat.R_stanje[0] (in view: work.sem(struct)) with 12 loads 1 time to improve timing.
+@N: FX271 :"c:\users\erny\documents\fer\diglog\labosi\lab6\sem_automat_modificirano.vhd":67:1:67:2|Replicating instance I_automat.R_timer[0] (in view: work.sem(struct)) with 10 loads 1 time to improve timing.
+@N: FX271 :"c:\users\erny\documents\fer\diglog\labosi\lab6\sem_automat_modificirano.vhd":67:1:67:2|Replicating instance I_automat.R_timer[4] (in view: work.sem(struct)) with 7 loads 1 time to improve timing.
+@N: FX271 :"c:\users\erny\documents\fer\diglog\labosi\lab6\sem_automat_modificirano.vhd":67:1:67:2|Replicating instance I_automat.R_timer[3] (in view: work.sem(struct)) with 8 loads 1 time to improve timing.
+Added 4 Registers via timing driven replication
+Added 4 LUTs via timing driven replication
+
+   7		0h:00m:01s		    -1.61ns		  47 /        41
+   8		0h:00m:01s		    -1.27ns		  47 /        41
+   9		0h:00m:01s		    -1.61ns		  47 /        41
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 144MB peak: 145MB)
+
+@N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 144MB peak: 145MB)
+
+@N: MT611 :|Automatically generated clock sem|R_clk_div_derived_clock[23] is not used and is being removed
+
+
+@S |Clock Optimization Summary
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+1 non-gated/non-generated clock tree(s) driving 41 clock pin(s) of sequential element(s)
+0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+16 instances converted, 0 sequential instances remain driven by gated/generated clocks
+
+=========================== Non-Gated/Non-Generated Clocks ============================
+Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance
+---------------------------------------------------------------------------------------
+@K:CKID0001       clk_25m             port                   41         R_clk_div[23]  
+=======================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+
+
+Start Writing Netlists (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 109MB peak: 145MB)
+
+Writing Analyst data base C:\Users\Erny\Documents\FER\DIGLOG\labosi\lab6\impl1\synwork\lab6_impl1_m.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 140MB peak: 145MB)
+
+Writing EDIF Netlist and constraint files
+@N: FX1056 |Writing EDF file: C:\Users\Erny\Documents\FER\DIGLOG\labosi\lab6\impl1\lab6_impl1.edi
+M-2017.03L-SP1-1
+@N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
+
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 144MB peak: 146MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 145MB peak: 146MB)
+
+@W: MT420 |Found inferred clock sem|clk_25m with period 4.71ns. Please declare a user-defined clock on object "p:clk_25m"
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Mon Jan 14 15:32:30 2019
+#
+
+
+Top view:               sem
+Requested Frequency:    212.4 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.
+
+
+
+Performance Summary
+*******************
+
+
+Worst slack in design: -0.831
+
+                   Requested     Estimated     Requested     Estimated                Clock        Clock                
+Starting Clock     Frequency     Frequency     Period        Period        Slack      Type         Group                
+------------------------------------------------------------------------------------------------------------------------
+sem|clk_25m        212.4 MHz     180.5 MHz     4.708         5.539         -0.831     inferred     Autoconstr_clkgroup_0
+========================================================================================================================
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                    |    rise  to  rise    |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+-----------------------------------------------------------------------------------------------------------------
+Starting     Ending       |  constraint  slack   |  constraint  slack  |  constraint  slack  |  constraint  slack
+-----------------------------------------------------------------------------------------------------------------
+sem|clk_25m  sem|clk_25m  |  4.708       -0.831  |  No paths    -      |  No paths    -      |  No paths    -    
+=================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: sem|clk_25m
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                               Starting                                                 Arrival           
+Instance                       Reference       Type        Pin     Net                  Time        Slack 
+                               Clock                                                                      
+----------------------------------------------------------------------------------------------------------
+I_automat.R_timer[5]           sem|clk_25m     FD1P3IX     Q       R_timer[5]           1.251       -0.831
+I_automat.R_stanje_fast[0]     sem|clk_25m     FD1P3AX     Q       R_stanje_fast[0]     1.213       -0.793
+I_automat.R_timer[6]           sem|clk_25m     FD1P3IX     Q       R_timer[6]           1.213       -0.793
+I_automat.R_timer[7]           sem|clk_25m     FD1P3IX     Q       R_timer[7]           1.166       -0.746
+I_automat.R_timer_fast[0]      sem|clk_25m     FD1S3IX     Q       R_timer_fast[0]      1.166       -0.746
+I_automat.R_timer_fast[3]      sem|clk_25m     FD1P3IX     Q       R_timer_fast[3]      1.166       -0.746
+I_automat.R_timer_fast[4]      sem|clk_25m     FD1P3IX     Q       R_timer_fast[4]      1.091       -0.671
+R_clk_div_pipe_24              sem|clk_25m     FD1S3AX     Q       un2_r_clk_div[0]     1.166       -0.073
+I_automat.R_stanje[1]          sem|clk_25m     FD1P3AX     Q       R_stanje[1]          1.335       -0.032
+I_automat.R_stanje[2]          sem|clk_25m     FD1P3AX     Q       R_stanje[2]          1.326       -0.023
+==========================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                              Starting                                         Required           
+Instance                      Reference       Type        Pin     Net          Time         Slack 
+                              Clock                                                               
+--------------------------------------------------------------------------------------------------
+I_automat.R_timer[0]          sem|clk_25m     FD1S3IX     CD      g0_0_iso     4.348        -0.831
+I_automat.R_timer[1]          sem|clk_25m     FD1P3IX     CD      g0_0_iso     4.348        -0.831
+I_automat.R_timer[2]          sem|clk_25m     FD1P3IX     CD      g0_0_iso     4.348        -0.831
+I_automat.R_timer[3]          sem|clk_25m     FD1P3IX     CD      g0_0_iso     4.348        -0.831
+I_automat.R_timer[4]          sem|clk_25m     FD1P3IX     CD      g0_0_iso     4.348        -0.831
+I_automat.R_timer[5]          sem|clk_25m     FD1P3IX     CD      g0_0_iso     4.348        -0.831
+I_automat.R_timer[6]          sem|clk_25m     FD1P3IX     CD      g0_0_iso     4.348        -0.831
+I_automat.R_timer[7]          sem|clk_25m     FD1P3IX     CD      g0_0_iso     4.348        -0.831
+I_automat.R_timer_fast[0]     sem|clk_25m     FD1S3IX     CD      g0_0_iso     4.348        -0.831
+I_automat.R_timer_fast[3]     sem|clk_25m     FD1P3IX     CD      g0_0_iso     4.348        -0.831
+==================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      4.708
+    - Setup time:                            0.360
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         4.348
+
+    - Propagation time:                      5.179
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -0.831
+
+    Number of logic level(s):                4
+    Starting point:                          I_automat.R_timer[5] / Q
+    Ending point:                            I_automat.R_timer[0] / CD
+    The start point is clocked by            sem|clk_25m [rising] on pin CK
+    The end   point is clocked by            sem|clk_25m [rising] on pin CK
+
+Instance / Net                                     Pin      Pin               Arrival     No. of    
+Name                                  Type         Name     Dir     Delay     Time        Fan Out(s)
+----------------------------------------------------------------------------------------------------
+I_automat.R_timer[5]                  FD1P3IX      Q        Out     1.251     1.251       -         
+R_timer[5]                            Net          -        -       -         -           5         
+I_automat.R_timer_fast_RNIEOTT[3]     ORCALUT4     A        In      0.000     1.251       -         
+I_automat.R_timer_fast_RNIEOTT[3]     ORCALUT4     Z        Out     0.883     2.134       -         
+R_timer_fast_RNIEOTT[3]               Net          -        -       -         -           1         
+I_automat.R_stanje_RNITNGS1[3]        ORCALUT4     D        In      0.000     2.134       -         
+I_automat.R_stanje_RNITNGS1[3]        ORCALUT4     Z        Out     0.968     3.102       -         
+R_stanje_RNITNGS1[3]                  Net          -        -       -         -           2         
+I_automat.R_timer_RNIK16G4[1]         ORCALUT4     C        In      0.000     3.102       -         
+I_automat.R_timer_RNIK16G4[1]         ORCALUT4     Z        Out     0.883     3.986       -         
+R_timer_RNIK16G4[1]                   Net          -        -       -         -           1         
+I_automat.R_timer_RNI8REMA[0]         ORCALUT4     A        In      0.000     3.986       -         
+I_automat.R_timer_RNI8REMA[0]         ORCALUT4     Z        Out     1.194     5.179       -         
+g0_0_iso                              Net          -        -       -         -           11        
+I_automat.R_timer[0]                  FD1S3IX      CD       In      0.000     5.179       -         
+====================================================================================================
+
+
+Path information for path number 2: 
+      Requested Period:                      4.708
+    - Setup time:                            0.360
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         4.348
+
+    - Propagation time:                      5.179
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -0.831
+
+    Number of logic level(s):                4
+    Starting point:                          I_automat.R_timer[5] / Q
+    Ending point:                            I_automat.R_timer[7] / CD
+    The start point is clocked by            sem|clk_25m [rising] on pin CK
+    The end   point is clocked by            sem|clk_25m [rising] on pin CK
+
+Instance / Net                                     Pin      Pin               Arrival     No. of    
+Name                                  Type         Name     Dir     Delay     Time        Fan Out(s)
+----------------------------------------------------------------------------------------------------
+I_automat.R_timer[5]                  FD1P3IX      Q        Out     1.251     1.251       -         
+R_timer[5]                            Net          -        -       -         -           5         
+I_automat.R_timer_fast_RNIEOTT[3]     ORCALUT4     A        In      0.000     1.251       -         
+I_automat.R_timer_fast_RNIEOTT[3]     ORCALUT4     Z        Out     0.883     2.134       -         
+R_timer_fast_RNIEOTT[3]               Net          -        -       -         -           1         
+I_automat.R_stanje_RNITNGS1[3]        ORCALUT4     D        In      0.000     2.134       -         
+I_automat.R_stanje_RNITNGS1[3]        ORCALUT4     Z        Out     0.968     3.102       -         
+R_stanje_RNITNGS1[3]                  Net          -        -       -         -           2         
+I_automat.R_timer_RNIK16G4[1]         ORCALUT4     C        In      0.000     3.102       -         
+I_automat.R_timer_RNIK16G4[1]         ORCALUT4     Z        Out     0.883     3.986       -         
+R_timer_RNIK16G4[1]                   Net          -        -       -         -           1         
+I_automat.R_timer_RNI8REMA[0]         ORCALUT4     A        In      0.000     3.986       -         
+I_automat.R_timer_RNI8REMA[0]         ORCALUT4     Z        Out     1.194     5.179       -         
+g0_0_iso                              Net          -        -       -         -           11        
+I_automat.R_timer[7]                  FD1P3IX      CD       In      0.000     5.179       -         
+====================================================================================================
+
+
+Path information for path number 3: 
+      Requested Period:                      4.708
+    - Setup time:                            0.360
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         4.348
+
+    - Propagation time:                      5.179
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -0.831
+
+    Number of logic level(s):                4
+    Starting point:                          I_automat.R_timer[5] / Q
+    Ending point:                            I_automat.R_timer[6] / CD
+    The start point is clocked by            sem|clk_25m [rising] on pin CK
+    The end   point is clocked by            sem|clk_25m [rising] on pin CK
+
+Instance / Net                                     Pin      Pin               Arrival     No. of    
+Name                                  Type         Name     Dir     Delay     Time        Fan Out(s)
+----------------------------------------------------------------------------------------------------
+I_automat.R_timer[5]                  FD1P3IX      Q        Out     1.251     1.251       -         
+R_timer[5]                            Net          -        -       -         -           5         
+I_automat.R_timer_fast_RNIEOTT[3]     ORCALUT4     A        In      0.000     1.251       -         
+I_automat.R_timer_fast_RNIEOTT[3]     ORCALUT4     Z        Out     0.883     2.134       -         
+R_timer_fast_RNIEOTT[3]               Net          -        -       -         -           1         
+I_automat.R_stanje_RNITNGS1[3]        ORCALUT4     D        In      0.000     2.134       -         
+I_automat.R_stanje_RNITNGS1[3]        ORCALUT4     Z        Out     0.968     3.102       -         
+R_stanje_RNITNGS1[3]                  Net          -        -       -         -           2         
+I_automat.R_timer_RNIK16G4[1]         ORCALUT4     C        In      0.000     3.102       -         
+I_automat.R_timer_RNIK16G4[1]         ORCALUT4     Z        Out     0.883     3.986       -         
+R_timer_RNIK16G4[1]                   Net          -        -       -         -           1         
+I_automat.R_timer_RNI8REMA[0]         ORCALUT4     A        In      0.000     3.986       -         
+I_automat.R_timer_RNI8REMA[0]         ORCALUT4     Z        Out     1.194     5.179       -         
+g0_0_iso                              Net          -        -       -         -           11        
+I_automat.R_timer[6]                  FD1P3IX      CD       In      0.000     5.179       -         
+====================================================================================================
+
+
+Path information for path number 4: 
+      Requested Period:                      4.708
+    - Setup time:                            0.360
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         4.348
+
+    - Propagation time:                      5.179
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -0.831
+
+    Number of logic level(s):                4
+    Starting point:                          I_automat.R_timer[5] / Q
+    Ending point:                            I_automat.R_timer[5] / CD
+    The start point is clocked by            sem|clk_25m [rising] on pin CK
+    The end   point is clocked by            sem|clk_25m [rising] on pin CK
+
+Instance / Net                                     Pin      Pin               Arrival     No. of    
+Name                                  Type         Name     Dir     Delay     Time        Fan Out(s)
+----------------------------------------------------------------------------------------------------
+I_automat.R_timer[5]                  FD1P3IX      Q        Out     1.251     1.251       -         
+R_timer[5]                            Net          -        -       -         -           5         
+I_automat.R_timer_fast_RNIEOTT[3]     ORCALUT4     A        In      0.000     1.251       -         
+I_automat.R_timer_fast_RNIEOTT[3]     ORCALUT4     Z        Out     0.883     2.134       -         
+R_timer_fast_RNIEOTT[3]               Net          -        -       -         -           1         
+I_automat.R_stanje_RNITNGS1[3]        ORCALUT4     D        In      0.000     2.134       -         
+I_automat.R_stanje_RNITNGS1[3]        ORCALUT4     Z        Out     0.968     3.102       -         
+R_stanje_RNITNGS1[3]                  Net          -        -       -         -           2         
+I_automat.R_timer_RNIK16G4[1]         ORCALUT4     C        In      0.000     3.102       -         
+I_automat.R_timer_RNIK16G4[1]         ORCALUT4     Z        Out     0.883     3.986       -         
+R_timer_RNIK16G4[1]                   Net          -        -       -         -           1         
+I_automat.R_timer_RNI8REMA[0]         ORCALUT4     A        In      0.000     3.986       -         
+I_automat.R_timer_RNI8REMA[0]         ORCALUT4     Z        Out     1.194     5.179       -         
+g0_0_iso                              Net          -        -       -         -           11        
+I_automat.R_timer[5]                  FD1P3IX      CD       In      0.000     5.179       -         
+====================================================================================================
+
+
+Path information for path number 5: 
+      Requested Period:                      4.708
+    - Setup time:                            0.360
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         4.348
+
+    - Propagation time:                      5.179
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -0.831
+
+    Number of logic level(s):                4
+    Starting point:                          I_automat.R_timer[5] / Q
+    Ending point:                            I_automat.R_timer[4] / CD
+    The start point is clocked by            sem|clk_25m [rising] on pin CK
+    The end   point is clocked by            sem|clk_25m [rising] on pin CK
+
+Instance / Net                                     Pin      Pin               Arrival     No. of    
+Name                                  Type         Name     Dir     Delay     Time        Fan Out(s)
+----------------------------------------------------------------------------------------------------
+I_automat.R_timer[5]                  FD1P3IX      Q        Out     1.251     1.251       -         
+R_timer[5]                            Net          -        -       -         -           5         
+I_automat.R_timer_fast_RNIEOTT[3]     ORCALUT4     A        In      0.000     1.251       -         
+I_automat.R_timer_fast_RNIEOTT[3]     ORCALUT4     Z        Out     0.883     2.134       -         
+R_timer_fast_RNIEOTT[3]               Net          -        -       -         -           1         
+I_automat.R_stanje_RNITNGS1[3]        ORCALUT4     D        In      0.000     2.134       -         
+I_automat.R_stanje_RNITNGS1[3]        ORCALUT4     Z        Out     0.968     3.102       -         
+R_stanje_RNITNGS1[3]                  Net          -        -       -         -           2         
+I_automat.R_timer_RNIK16G4[1]         ORCALUT4     C        In      0.000     3.102       -         
+I_automat.R_timer_RNIK16G4[1]         ORCALUT4     Z        Out     0.883     3.986       -         
+R_timer_RNIK16G4[1]                   Net          -        -       -         -           1         
+I_automat.R_timer_RNI8REMA[0]         ORCALUT4     A        In      0.000     3.986       -         
+I_automat.R_timer_RNI8REMA[0]         ORCALUT4     Z        Out     1.194     5.179       -         
+g0_0_iso                              Net          -        -       -         -           11        
+I_automat.R_timer[4]                  FD1P3IX      CD       In      0.000     5.179       -         
+====================================================================================================
+
+
+
+##### END OF TIMING REPORT #####]
+
+Timing exceptions that could not be applied
+None
+
+Finished final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 145MB peak: 146MB)
+
+
+Finished timing report (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 145MB peak: 146MB)
+
+---------------------------------------
+Resource Usage Report
+Part: lfxp2_8e-5
+
+Register bits: 41 of 8352 (0%)
+PIC Latch:       0
+I/O cells:       11
+
+
+Details:
+CCU2B:          25
+FD1P3AX:        5
+FD1P3IX:        9
+FD1S3AX:        25
+FD1S3IX:        2
+GSR:            1
+IB:             3
+INV:            1
+OB:             8
+ORCALUT4:       46
+PUR:            1
+VHI:            2
+VLO:            2
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 32MB peak: 146MB)
+
+Process took 0h:00m:02s realtime, 0h:00m:01s cputime
+# Mon Jan 14 15:32:31 2019
+
+###########################################################]

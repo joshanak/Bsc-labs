@@ -1,0 +1,1 @@
+Pokretanje kao normalna python skripta - eventualno venv radi probleme jer je pisano u pycharmu

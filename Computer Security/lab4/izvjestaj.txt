@@ -1,0 +1,2 @@
+Prilikom otvaranja wiresharka i korištenjem akcije "Follow TCP stream" pronalazim cijelu nekriptiranu poruku,
+te kao napadač mogu iskoristiti tu slabost(priložiti ću sliku) 

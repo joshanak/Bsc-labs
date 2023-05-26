@@ -1,0 +1,34 @@
+#defaultlanguage:vhdl
+#OPTIONS:"|-top|sem|-prodtype|synplify_pro|-fixsmult|-infer_seqShift|-nram|-sdff_counter|-divnmod|-nostructver|-encrypt|-pro|-lite|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-ignore_undefined_lib|-lib|work|-lib|work|-lib|work|-fileorder|C:\\Users\\Erny\\Documents\\FER\\DIGLOG\\labosi\\lab6\\impl1\\syntmp\\hdlorder.tcl"
+#CUR:"C:\\lscc\\diamond\\3.10_x64\\synpbase\\bin64\\c_vhdl.exe":1501884910
+#CUR:"C:\\lscc\\diamond\\3.10_x64\\synpbase\\lib\\vhd\\location.map":1501908208
+#CUR:"C:\\lscc\\diamond\\3.10_x64\\synpbase\\lib\\vhd\\std.vhd":1501884224
+#CUR:"C:\\lscc\\diamond\\3.10_x64\\synpbase\\lib\\vhd\\snps_haps_pkg.vhd":1501884224
+#CUR:"C:\\lscc\\diamond\\3.10_x64\\synpbase\\lib\\vhd\\std1164.vhd":1501884224
+#CUR:"C:\\lscc\\diamond\\3.10_x64\\synpbase\\lib\\vhd\\numeric.vhd":1501884224
+#CUR:"C:\\lscc\\diamond\\3.10_x64\\synpbase\\lib\\vhd\\umr_capim.vhd":1501884224
+#CUR:"C:\\lscc\\diamond\\3.10_x64\\synpbase\\lib\\vhd\\arith.vhd":1501884224
+#CUR:"C:\\lscc\\diamond\\3.10_x64\\synpbase\\lib\\vhd\\unsigned.vhd":1501884224
+#CUR:"C:\\lscc\\diamond\\3.10_x64\\synpbase\\lib\\vhd\\hyperents.vhd":1501884224
+#CUR:"C:\\lscc\\diamond\\3.10_x64\\cae_library\\synthesis\\vhdl\\xp2.vhd":1493302306
+#CUR:"C:\\Users\\Erny\\Documents\\FER\\DIGLOG\\labosi\\lab6\\source\\sem_toplevel.vhd":1547379469
+#CUR:"C:\\Users\\Erny\\Documents\\FER\\DIGLOG\\labosi\\lab6\\sem_automat_modificirano.vhd":1547476332
+0 "C:\lscc\diamond\3.10_x64\cae_library\synthesis\vhdl\xp2.vhd" vhdl
+1 "C:\Users\Erny\Documents\FER\DIGLOG\labosi\lab6\source\sem_toplevel.vhd" vhdl
+2 "C:\Users\Erny\Documents\FER\DIGLOG\labosi\lab6\sem_automat_modificirano.vhd" vhdl
+
+# Dependency Lists (Uses list)
+0 -1
+1 2 
+2 -1
+
+# Dependency Lists (Users Of)
+0 -1
+1 -1
+2 1 
+
+# Design Unit to File Association
+arch work sem struct 1
+module work sem 1
+arch work sem_automat mix_moore_mealy 2
+module work sem_automat 2

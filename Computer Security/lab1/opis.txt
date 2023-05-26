@@ -1,0 +1,3 @@
+Program tajnik.py za enkripciju i dekripciju podataka u bazi podataka  radi na principu simetričnog šifriranja putem GCM metode koji ujedno i hashiranjem. Enkripcijom se osigurava povjerljivost podataka (odnosno da podatci ne mogu biti interpretirani), a hashiranjem integritet(odnosno da podatci nisu izmijenjeni). Za metodu GCM potreban je ključ kojim metodom KDF(key derivation function) proširujem, odnosno kompliciram tako da napadaču oteža zadatak (pogotovo brute forceom). KDF proširuje funkciju tako da stvara salt i nonce te izvršavajući određene funkcije s njima i ključem postiže željeni cilj. Detaljniji opis kako sam implementirao program vidljiv je u komentarima u samom programu.
+
+Josip Hanak

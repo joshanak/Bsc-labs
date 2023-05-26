@@ -1,0 +1,16 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Solution" type="Application" factoryName="Application" nameIsGenerated="true">
+    <option name="MAIN_CLASS_NAME" value="ui.Solution" />
+    <module name="lab2java" />
+    <option name="PROGRAM_PARAMETERS" value="cooking C:\Users\josip\Documents\Education\FER\3.god\2-ciklus\UmjetnaInt\labosi\autograder\data\lab2\files\cooking_coffee.txt  C:\Users\josip\Documents\Education\FER\3.god\2-ciklus\UmjetnaInt\labosi\autograder\data\lab2\files\cooking_coffee_input.txt" />
+    <extension name="coverage">
+      <pattern>
+        <option name="PATTERN" value="ui.*" />
+        <option name="ENABLED" value="true" />
+      </pattern>
+    </extension>
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

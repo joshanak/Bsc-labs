@@ -1,0 +1,25 @@
+Resource Usage Report
+Part: lfxp2_8e-5
+
+Register bits: 64 of 8352 (1%)
+PIC Latch:       0
+I/O cells:       18
+
+Details:
+CCU2B:          17
+FD1P3AX:        16
+FD1S3AX:        12
+FD1S3IX:        25
+FD1S3JX:        7
+GSR:            1
+IB:             10
+IFS1P3DX:       4
+INV:            1
+L6MUX21:        2
+MULT9X9B:       1
+OB:             8
+ORCALUT4:       102
+PFUMX:          19
+PUR:            1
+VHI:            4
+VLO:            4

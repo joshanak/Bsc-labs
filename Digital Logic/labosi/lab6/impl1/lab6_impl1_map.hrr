@@ -1,0 +1,21 @@
+---------------------------------------------------
+Report for cell sem
+   Instance path: sem
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      55.00        100.0
+                                  LUT4	      49.00        100.0
+                                 IOBUF	         11        100.0
+                                PFUREG	         41        100.0
+                                RIPPLE	         25        100.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                           sem_automat	          1        46.4
+---------------------------------------------------
+Report for cell sem_automat
+   Instance path: sem/I_automat
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      25.50        46.4
+                                  LUT4	      44.00        89.8
+                                PFUREG	         16        39.0

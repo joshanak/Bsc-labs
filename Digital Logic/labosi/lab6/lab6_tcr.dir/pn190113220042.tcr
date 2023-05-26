@@ -1,0 +1,19 @@
+#Start recording tcl command: 1/13/2019 13:12:06
+#Project Location: C:/Users/Erny/Documents/FER/DIGLOG/labosi/lab6; Project name: lab6
+prj_project new -name "lab6" -impl "impl1" -dev LFXP2-8E-5TN144C -synthesis "synplify" -lpf "C:/Users/Erny/Documents/FER/DIGLOG/labosi/lab6/source/ulx2s.lpf"
+prj_src add "C:/Users/Erny/Documents/FER/DIGLOG/labosi/lab6/source/sem_automat_pokvareni.vhd" "C:/Users/Erny/Documents/FER/DIGLOG/labosi/lab6/source/sem_toplevel.vhd"
+prj_project save
+prj_run Export -impl impl1
+prj_src add "C:/Users/Erny/Documents/FER/DIGLOG/Labosi sklopovski/LV6/Upload/sem_automat.vhd"
+prj_src exclude "C:/Users/Erny/Documents/FER/DIGLOG/Labosi sklopovski/LV6/Upload/sem_automat.vhd"
+prj_run Export -impl impl1
+prj_src remove "C:/Users/Erny/Documents/FER/DIGLOG/labosi/lab6/source/sem_automat_pokvareni.vhd"
+prj_src remove "C:/Users/Erny/Documents/FER/DIGLOG/Labosi sklopovski/LV6/Upload/sem_automat.vhd"
+prj_src add "C:/Users/Erny/Documents/FER/DIGLOG/labosi/lab6/source/sem_automat.vhd"
+prj_src add "C:/Users/Erny/Documents/FER/DIGLOG/labosi/lab6/source/sem_automat_pokvareni.vhd"
+prj_src exclude "C:/Users/Erny/Documents/FER/DIGLOG/labosi/lab6/source/sem_automat.vhd"
+prj_run Export -impl impl1
+prj_src exclude "C:/Users/Erny/Documents/FER/DIGLOG/labosi/lab6/source/sem_automat_pokvareni.vhd"
+prj_src enable "C:/Users/Erny/Documents/FER/DIGLOG/labosi/lab6/source/sem_automat.vhd"
+prj_run Export -impl impl1
+#Stop recording: 1/13/2019 22:00:42
